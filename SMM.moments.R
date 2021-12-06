@@ -22,7 +22,7 @@ SMM.moments <- function(psi,x){
              q <- lm(H~C)$fitted.values
              dH.dpsi.1 <- -Y*Z*exp(-psi[1]*Z-psi[2]*X)
              ###D1 = E[dH.dpsi.1 | Z, C]
-             D1 <- lm(dH.dpsi.1∼Z*C)$fitted.values
+             D1 <- lm(dH.dpsi.1~Z*C)$fitted.values
              dH.dpsi.2 <- -Y*X*exp(-psi[1]*Z-psi[2]*X)
              ###D2 = E[dH.dpsi.2 | Z, C]
              D2 <- lm(dH.dpsi.2~Z*C)$fitted.values
@@ -30,7 +30,7 @@ SMM.moments <- function(psi,x){
              ###w = 1/E[(H-q)^2 | Z, C]
              w <- 1/(lm(sq.dev~Z*C)$fitted.values)
              ###Ew = E[w | C]
-             Ew <- lm(w∼C)$fitted.values
+             Ew <- lm(w~C)$fitted.values
              wD1 <- w*D1
              ###EwD1 = E[wD1 | C]
              EwD1 <- lm(wD1~C)$fitted.values
