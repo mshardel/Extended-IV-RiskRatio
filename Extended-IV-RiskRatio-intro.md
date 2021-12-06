@@ -22,7 +22,6 @@ Example data
 The following produces the data in Table 3 of Shardell and Ferrucci
 (2016) and converts it from wide format to long format:
 
-    #data from Table 3 in Shardell and Ferrucci (2016)
     ### data from Table 3 in Shardell and Ferrucci (2016)
     ### Y = outcome, X = exposure, Z = invalid IV, C = covariate
     var.combos <- list(Y = 0:1, X = 0:1, Z = 0:1, C = 0:1)
@@ -46,7 +45,6 @@ Results are used to derive causal risk ratios and 95% confidence
 intervals reported in the “EIV, Optimal” section of Table 2 in Shardell
 and Ferrucci (2016).
 
-    #data from Table 3 in Shardell and Ferrucci (2016)
     ### using starting coefficiant values of 0 and 
     ### assuming iid for estimating variance covariance 
     SMM.pre <- gmm(SMM.moments, x=the.data, t0=c(0,0), vcov="iid")
