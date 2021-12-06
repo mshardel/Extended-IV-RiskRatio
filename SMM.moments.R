@@ -45,3 +45,5 @@ SMM.moments <- function(psi,x){
              m2 <- dopt.2*(H - q)
              return(cbind(m1,m2))
 }
+
+
