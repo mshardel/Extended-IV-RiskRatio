@@ -75,3 +75,7 @@ and Ferrucci (2016).
     ##                          lcl       ucl
     ## Theta[1] 0.6197594 0.5797296 0.6625533
     ## Theta[2] 4.6203409 3.2520457 6.5643451
+
+Note: Shardell and Ferrucci (2016) use Psi to denote SMM parameters to
+be consistent with the causal inference literature. The gmm() function
+uses Theta to denote model parameters.
