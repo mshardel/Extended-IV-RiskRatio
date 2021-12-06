@@ -42,7 +42,7 @@ sensitive to starting values; for this reason, generate estimates using
 gmm() with starting coefficient value of 0, then update the values by
 implementing gmm() again. Results are the coefficients and standard
 errors for the exposure (X) and the potentially invalid instrument (Z).
-Results are used to derive causal risk ratios and 95$ confidence
+Results are used to derive causal risk ratios and 95% confidence
 intervals reported in the “EIV, Optimal” section of Table 2 in Shardell
 and Ferrucci (2016).
 
