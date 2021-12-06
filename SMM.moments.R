@@ -12,10 +12,10 @@
 
 ###moment functions (score equations) for G-estimation of structural mean models (SMMs)
 SMM.moments <- function(psi,x){
-             C <- x[,“C”] ###covariate
-             Y <- x[,“Y”] ###outcome
-             X <- x[,“X”] ###exposure
-             Z <- x[,“Z”] ###(possibly invalid) instrument
+             C <- x[,"C"] ###covariate
+             Y <- x[,"Y"] ###outcome
+             X <- x[,"X"] ###exposure
+             Z <- x[,"Z"] ###(possibly invalid) instrument
              ###predicted treatment-free counterfactual
              H <- Y*exp(-psi[1]*Z-psi[2]*X)
              ###q = E[H | C]
