@@ -19,7 +19,7 @@ SMM.moments <- function(psi,x){
              ###predicted treatment-free counterfactual
              H <- Y*exp(-psi[1]*Z-psi[2]*X)
              ###q = E[H | C]
-             q <- lm(H∼C)$fitted.values
+             q <- lm(H~C)$fitted.values
              dH.dpsi.1 <- -Y*Z*exp(-psi[1]*Z-psi[2]*X)
              ###D1 = E[dH.dpsi.1 | Z, C]
              D1 <- lm(dH.dpsi.1∼Z*C)$fitted.values
